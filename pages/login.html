@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,33 +11,37 @@
     <title>Login - Chill</title>
 </head>
 <body style="background-image: url('../images/bg/login-bg.webp');">
-    <form>
-        <a class="brand-logo" href="../index.html">
-            <img src="../images/logo/logo.svg" alt="Chill Logo" class="logo">
-        </a>
-        <div class="section-header">
-            <h2>Masuk</h2>
-            <p>Selamat datang kembali!</p>
-        </div>
-        <div class="input-group">
-            <div class="input-section">
-                <label for="username">Username</label>
-                <input type="text" name="username" id="username" placeholder="Masukkan username">
+    <main>
+        <form>
+            <a class="brand-logo" href="../index.html">
+                <img src="../images/logo/logo.svg" alt="Chill Logo" class="logo">
+            </a>
+            <div class="section-header">
+                <h1>Masuk</h1>
+                <p>Selamat datang kembali!</p>
             </div>
-            <div class="input-section">
-                <label for="password">Kata Sandi</label>
-                <input type="password" name="password" id="password" placeholder="Masukkan kata sandi">
+            <div class="input-group">
+                <fieldset class="input-fields">
+                    <div class="input-section">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" placeholder="Masukkan username">
+                    </div>
+                    <div class="input-section">
+                        <label for="password">Kata Sandi</label>
+                        <input type="password" name="password" id="password" placeholder="Masukkan kata sandi">
+                    </div>
+                </fieldset>
+                <div id="auth-option">
+                    <p>Belum punya akun? <a id="register" href="register.html">Daftar</a></p>
+                    <p><a id="forgot-password" href="#">Lupa kata sandi?</a></p>
+                </div>
             </div>
-            <div id="auth-option">
-                <p>Belum punya akun? <a id="register" href="register.html">Daftar</a></p>
-                <p><a id="forgot-password" href="#">Lupa kata sandi?</a></p>
+            <div class="auth-button">
+                <button type="submit">Masuk</button>
+                <p>Atau</p>
+                <button type="button" id="google-auth"> <img id="g-icon" src="../images/icons/google.svg" alt="">Masuk dengan Google</button>
             </div>
-        </div>
-        <div class="auth-button">
-            <button type="submit">Masuk</button>
-            <p>Atau</p>
-            <button type="button" id="google-auth"> <img id="g-icon" src="../images/icons/google.svg"/>Masuk dengan Google</button>
-        </div>
-    </form>
+        </form>
+    </main>
 </body>
 </html>
