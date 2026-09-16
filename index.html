@@ -1,11 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
     <title>Chill - Your Next Movie Experience</title>
 </head>
+
 <body>
-    
+    <header>
+        <nav class="flex items-center justify-between h-14 md:h-16 lg:h-20 w-full mx-auto px-8 md:px-12 lg:px-32">
+            <div class="flex items-center justify-center gap-2.5 md:gap-8 lg:gap-12">
+                <a href="index.html">
+                    <picture class="flex items-center justify-center">
+                        <source media="(min-width: 768px)" srcset="./assets/logo/logo-full.svg">
+
+                        <img class="h-4 md:h-5 lg:h-5" src="./assets/logo/logo.svg" alt="Chill">
+                    </picture>
+                </a>
+                <div class="flex gap-2.5 md:gap-6 lg:gap-8">
+                    <a class="text-white text-sm font-bold no-underline hover:text-gray-500 md:text-base lg:text-lg"
+                        href="#series">Series</a>
+                    <a class="text-white text-sm font-bold no-underline hover:text-gray-500 md:text-base lg:text-lg"
+                        href="#film">Film</a>
+                    <a class="text-white text-sm font-bold no-underline hover:text-gray-500 md:text-base lg:text-lg"
+                        href="#daftar-saya">Daftar Saya</a>
+                </div>
+            </div>
+            <div class="relative group">
+                <div class="flex justify-between items-center md:gap-1 lg:gap-2">
+                    <button class="w-7.5 md:w-9 lg:w-11 h-7.5 md:h-9 lg:h-11 rounded-full overflow-hidden">
+                        <img src="./assets/images/avatar.webp" alt="Profile" class="w-full h-full object-cover">
+                    </button>
+                    <img src="./assets/icons/dropdown.svg" class="w-7.5 md:w-8 lg:w-10 h-7.5 md:h-8 lg:h-10">
+
+                </div>
+                <div
+                    class="absolute right-0 z-10 top-full w-40 md:w-56 bg-[#181a1c] rounded-b-md p-3 hidden group-hover:block text-xs md:text-sm lg:text-base">
+                    <a href="#" class="flex items-center gap-2 px-3 py-3
+                   text-white fint-bold no-underline
+                   hover:text-blue-700">
+                        <span class="w-5 h-5 bg-current
+                        [mask:url('/assets/icons/profile.svg')_center/contain_no-repeat]
+                        "></span>
+                        <span>Profil Saya</span>
+                    </a>
+                    <a href="#" class="flex items-center gap-2 px-3 py-3
+                   text-white fint-bold no-underline
+                   hover:text-blue-700">
+                        <span class="w-5 h-5 bg-current
+                        [mask:url('/assets/icons/star.svg')_center/contain_no-repeat]
+                        "></span>
+                        <span>Ubah Premium</span>
+                    </a>
+                    <a href="#" class="flex items-center gap-2 px-3 py-3
+                   text-white fint-bold no-underline
+                   hover:text-blue-700">
+                        <span class="w-5 h-5 bg-current
+                        [mask:url('/assets/icons/sign.svg')_center/contain_no-repeat]
+                        "></span>
+                        <span>Keluar</span>
+                    </a>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main id="home">
+        <hero
+            class="relative flex flex-col gap-2.5 md:gap-5 lg:gap-10 w-full min-h-56 md:min-h-80 lg:h-96 justify-end bg-[linear-gradient(to_bottom,rgba(24,26,28,0.1),rgba(24,26,28,1)),url('/assets/banners/banner-da-school.webp')] bg-cover bg-center px-8 md:px-12 lg:px-32 pb-10">
+            <div class="flex flex-col gap-2 w-full">
+                <div class="flex flex-col w-full md:max-w-3/4 lg:max-w-3/5 gap-2">
+                    <h1 class="w-full text-2xl md:text-3xl lg:text-5xl">Duty After School</h1>
+                    <p class="text-sm md:text-base line-clamp-2 md:line-clamp-3 lg:line-clamp-none">Sebuah benda tak
+                        dikenal mengambil alih dunia. Dalam keputusasaan, Departemen Pertahanan mulai merekrut lebih
+                        banyak tentara, termasuk siswa sekolah menengah. Mereka pun segera menjadi pejuang garis depan
+                        dalam perang.</p>
+                </div>
+            </div>
+            <div class="flex justify-between">
+                <div class="flex gap-3">
+                    <button
+                        class="button-primary text-xs md:text-sm lg:text-base px-4 md:px-5 lg:px-6 py-1.5 cursor-pointer"
+                        href="#">Mulai</button>
+                    <button
+                        class="button-secondary text-xs md:text-sm lg:text-base px-4 md:px-5 lg:px-6 py-1.5 gap-2 cursor-pointer"
+                        href="#lanjut-menonton">
+                        <img src="./assets/icons/about.svg" class="h-3 md:h-3.5 lg:h-4 w-3 md:w-3.5 lg:w-4" />
+                        Selengkapnya
+                    </button>
+                    <button
+                        class="flex items-center border border-[#C1C2C4] text-[#C1C2C4] text-xs md:text-sm lg:text-base rounded-3xl px-2 cursor-pointer hover:border-white hover:text-white"
+                        href="#">18+</button>
+                </div>
+                <button class="border rounded-full border-[#C1C2C4] hover:border-white px-2">
+                    <img class="h-3 md:h-4 w-3 md:w-4" src="./assets/icons/mute.svg" />
+                </button>
+            </div>
+        </hero>
+
+        <section class="flex">
+            <div></div>
+            <div></div>
+        </section>
+
+        <footer class="flex items-center justify-between text-[#C1C2C4] border-t border-t-[#E7E3FC3B] lg:px-32 lg:py-12">
+                <div class="flex flex-col items-start gap-6.5">
+                    <img src="./assets/logo/logo-full.svg" class="lg:h-12">
+                    <div>©2023 Chill All Rights Reserved.</div>
+                </div>
+                <div class="flex gap-40">
+                    <div class="flex flex-col gap-3.75">
+                        <div class="text-white">Genre</div>
+                        <div class="flex justify-between gap-7">
+                            <div class="flex flex-col gap-3.75">
+                                <a class="hover:text-white" href="#">Aksi</a>
+                                <a class="hover:text-white" href="#">Anak-anak</a>
+                                <a class="hover:text-white" href="#">Anime</a>
+                                <a class="hover:text-white" href="#">Britania</a>
+                            </div>
+                            <div class="flex flex-col gap-3.75">
+                                <a class="hover:text-white" href="#">Drama</a>
+                                <a class="hover:text-white" href="#">Fantasi Ilmiah & Fantasi</a>
+                                <a class="hover:text-white" href="#">Kejahatan</a>
+                                <a class="hover:text-white" href="#">KDrama</a>
+                            </div>
+                            <div class="flex flex-col gap-3.75">
+                                <a class="hover:text-white" href="#">Komedi</a>
+                                <a class="hover:text-white" href="#">Petualangan</a>
+                                <a class="hover:text-white" href="#">Perang</a>
+                                <a class="hover:text-white" href="#">Romantis</a>
+                            </div>
+                            <div class="flex flex-col gap-3.75">
+                                <a class="hover:text-white" href="#">Sains & Alam</a>
+                                <a class="hover:text-white" href="#">Thriller</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3.75">
+                        <p class="text-white">Bantuan</p>
+                        <a class="hover:text-white" href="#">FAQ</a>
+                        <a class="hover:text-white" href="#">Kontak Kami</a>
+                        <a class="hover:text-white" href="#">Privasi</a>
+                        <a class="hover:text-white" href="#">Syarat & Ketentuan</a>
+                    </div>
+                </div>
+            
+        </footer>
 </body>
+
 </html>

@@ -1,12 +1,29 @@
-.lato-regular {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+@import "tailwindcss";
 
 body {
     font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white
+    font-weight: normal;
+    color: white;
+}
+
+.button-primary {
+    display: flex;
+    align-items: center;
+    background-color: rgba(15, 30, 147, 1);
+    border-radius: 48px;
+}
+
+.button-primary:hover {
+    background-color: rgb(10, 20, 94);
+}
+
+.button-secondary {
+    display: flex;
+    align-items: center;
+    background-color: rgba(34, 40, 42, 1);
+    border-radius: 48px;
+}
+
+.button-secondary:hover {
+    background-color: rgb(96, 115, 121);
 }
