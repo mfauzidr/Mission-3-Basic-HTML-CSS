@@ -106,20 +106,23 @@
             </div>
         </hero>
 
-        <section class="flex">
+        <section class="flex h-screen">
             <div></div>
             <div></div>
         </section>
 
-        <footer class="flex items-center justify-between text-[#C1C2C4] border-t border-t-[#E7E3FC3B] lg:px-32 lg:py-12">
-                <div class="flex flex-col items-start gap-6.5">
-                    <img src="./assets/logo/logo-full.svg" class="lg:h-12">
-                    <div>©2023 Chill All Rights Reserved.</div>
+        <footer class="flex flex-col lg:flex-row lg:items-center justify-between w-full text-[#C1C2C4] border-t border-t-[#E7E3FC3B] px-9 md:px-12 lg:px-32 py-6 md:py-8 lg:py-12 gap-10 md:gap-6">
+                <div class="flex flex-col items-start gap-4 md:gap-5 lg:gap-6.5">
+                    <img src="./assets/logo/logo-full.svg" class="h-6.5 lg:h-12">
+                    <div class="text-xs md:text-sm lg:text-base">©2023 Chill All Rights Reserved.</div>
                 </div>
-                <div class="flex gap-40">
+                <div class="flex flex-col md:flex-row justify-between gap-2 md:gap-16 lg:gap-24 text-sm lg:text-base">
                     <div class="flex flex-col gap-3.75">
-                        <div class="text-white">Genre</div>
-                        <div class="flex justify-between gap-7">
+                        <div class="flex text-white justify-between w-full md:w-fit px-2 -mx-2 py-1 hover:bg-[#E7E3FC3B] md:hover:bg-transparent hover:cursor-pointer" href="#">
+                            <p>Genre</p>
+                            <img src="./assets/icons/right-arrow.svg" class="md:hidden" />
+                        </div>
+                        <div class="hidden md:flex justify-between gap-7">
                             <div class="flex flex-col gap-3.75">
                                 <a class="hover:text-white" href="#">Aksi</a>
                                 <a class="hover:text-white" href="#">Anak-anak</a>
@@ -145,14 +148,20 @@
                         </div>
                     </div>
                     <div class="flex flex-col gap-3.75">
-                        <p class="text-white">Bantuan</p>
-                        <a class="hover:text-white" href="#">FAQ</a>
-                        <a class="hover:text-white" href="#">Kontak Kami</a>
-                        <a class="hover:text-white" href="#">Privasi</a>
-                        <a class="hover:text-white" href="#">Syarat & Ketentuan</a>
+                        <div class="flex text-white justify-between w-full md:w-fit px-2 -mx-2 py-1 hover:bg-[#E7E3FC3B] md:hover:bg-transparent hover:cursor-pointer">
+                            <p>Bantuan</p>
+                            <img src="./assets/icons/right-arrow.svg" class="md:hidden" />
+                        </div>
+                        <div class="hidden md:flex justify-between">
+                            <div class="flex flex-col gap-3.75">
+                                <a class="hover:text-white" href="#">FAQ</a>
+                                <a class="hover:text-white" href="#">Kontak Kami</a>
+                                <a class="hover:text-white" href="#">Privasi</a>
+                                <a class="hover:text-white" href="#">Syarat & Ketentuan</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            
         </footer>
 </body>
 
